@@ -1,4 +1,5 @@
 ﻿using sportLife2.DbModel;
+using sportLife2.DTOs;
 
 namespace sportLife2.Repositories.Interface
 {
@@ -10,6 +11,7 @@ namespace sportLife2.Repositories.Interface
             bool Create(TEntity entity);
             bool Update(TEntity entity);
             bool Delete(int id);
-        }
+        
+    }
     
 }
