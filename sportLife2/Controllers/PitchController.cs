@@ -8,6 +8,7 @@ using sportLife2.Repositories.Interface;
 namespace sportLife2.Controllers
 {
     [Route("api/[controller]")]
+
    
     public class PitchController : Controller
     {

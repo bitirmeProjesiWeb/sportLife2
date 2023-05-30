@@ -41,7 +41,7 @@ namespace sportLife2.Migrations
                     UserId = table.Column<int>(type: "integer", nullable: false),
                     PitchId = table.Column<int>(type: "integer", nullable: false),
                     SessionId = table.Column<int>(type: "integer", nullable: false),
-                    Date = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    Date = table.Column<string>(type: "text", nullable: false),
                     CreatedDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     UpdatedDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     IsActive = table.Column<bool>(type: "boolean", nullable: false)

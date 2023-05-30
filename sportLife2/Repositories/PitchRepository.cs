@@ -37,7 +37,14 @@ namespace sportLife2.Repositories
         {
             var data = await (from Pitches in _context.Pitches
                               where Pitches.County == request.County && Pitches.Type == request.Type
-                              select  new TypePitchDTO()).ToListAsync();
+                              select  new TypePitchDTO()
+                              { 
+                                  Name=Pitches.Name,
+                                  Description=Pitches.Description,
+                                  Price=Pitches.Price,
+                              }
+                              
+                              ).ToListAsync();
 
             return data; 
         }

@@ -7,17 +7,10 @@ using sportLife2.Repositories.Interface;
 
 var builder = WebApplication.CreateBuilder(args);
 
-
-
-
-
 builder.Services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 builder.Services.AddTransient<IPitchRepository, PitchRepository>();
 builder.Services.AddTransient<IRezervationRepository, RezervationRepository>();
 builder.Services.AddTransient<ISessionRepository, SessionRepository>();
-
-
-
 
 // Add services to the container.
 
@@ -41,6 +34,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseAuthentication();
 
 app.UseAuthorization();
 

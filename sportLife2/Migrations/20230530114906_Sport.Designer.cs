@@ -12,7 +12,7 @@ using sportLife2.Properties.Models;
 namespace sportLife2.Migrations
 {
     [DbContext(typeof(DataBaseContext))]
-    [Migration("20230321122852_Sport")]
+    [Migration("20230530114906_Sport")]
     partial class Sport
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -83,8 +83,9 @@ namespace sportLife2.Migrations
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<DateTime>("Date")
-                        .HasColumnType("timestamp with time zone");
+                    b.Property<string>("Date")
+                        .IsRequired()
+                        .HasColumnType("text");
 
                     b.Property<bool>("IsActive")
                         .HasColumnType("boolean");

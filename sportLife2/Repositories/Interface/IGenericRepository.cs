@@ -10,8 +10,7 @@ namespace sportLife2.Repositories.Interface
             TEntity GetById(int id);
             bool Create(TEntity entity);
             bool Update(TEntity entity);
-            bool Delete(int id);
-        
-    }
+            bool Delete(int id);    
+         }
     
 }
