@@ -11,6 +11,7 @@ builder.Services.AddTransient(typeof(IGenericRepository<>), typeof(GenericReposi
 builder.Services.AddTransient<IPitchRepository, PitchRepository>();
 builder.Services.AddTransient<IRezervationRepository, RezervationRepository>();
 builder.Services.AddTransient<ISessionRepository, SessionRepository>();
+builder.Services.AddTransient<IUserRepository, UserRepository>();
 
 // Add services to the container.
 

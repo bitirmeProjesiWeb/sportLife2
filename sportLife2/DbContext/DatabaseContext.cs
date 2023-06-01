@@ -24,5 +24,6 @@ namespace sportLife2.Properties.Models
         public DbSet<Pitch> Pitches { get; set; }
         public DbSet<Rezervation> Rezervations { get; set; }
         public DbSet<Session> Sessions { get; set; }
+        public DbSet<UserEntity> Users { get; set; }
     }
 }

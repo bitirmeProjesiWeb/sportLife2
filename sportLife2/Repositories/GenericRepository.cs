@@ -15,7 +15,7 @@ namespace sportLife2.Repositories
            
 
         }
-        public bool Create(TEntity entity)
+        public virtual bool Create(TEntity entity)
         {
             try
             {

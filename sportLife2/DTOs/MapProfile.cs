@@ -15,7 +15,11 @@ namespace sportLife2.DTOs
             CreateMap<RezervationCreateDTO, Rezervation>().ReverseMap();
             CreateMap<TypePitchDTO, Pitch>().ReverseMap();
             CreateMap<RezervationListDTO, Rezervation>().ReverseMap();
-            CreateMap<Rezervation, RezervationListDTO>().ReverseMap(); 
+            CreateMap<Rezervation, RezervationListDTO>().ReverseMap();
+            CreateMap<UserEntity, UserDTO>().ReverseMap();
+            CreateMap<UserDTO, UserEntity>().ReverseMap();
+            CreateMap<UserUpdateDTO, UserEntity>().ReverseMap();
+
 
         }
     }
