@@ -55,7 +55,15 @@ namespace sportLife2.Repositories
                                   where Users.Email == request.Email && Users.Password == request.Password
                                   select new RolDTO()
                                   {
+                                      Id=Users.Id,
                                       Rol = Users.Rol,
+                                      Email = Users.Email,
+                                      Password = Users.Password,
+                                      PhoneNumber= Users.PhoneNumber,
+                                      Name= Users.Name,
+                                      Surname =Users.Surname,
+                                      
+
                                   }
 
                              ).ToListAsync();
